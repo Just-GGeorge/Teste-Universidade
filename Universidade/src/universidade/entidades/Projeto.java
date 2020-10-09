@@ -3,27 +3,31 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package univercidade.entidades;
+package universidade.entidades;
+
+import java.io.Serializable;
 
 /**
  *
  * @author jean
  */
-public class Departamento {
-    private String nome;
-    private String identificacaoDep;
+public class Projeto  implements Serializable{
+	
+	private String nome;
+	private int id;
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getIdentificacaoDep() {
-		return identificacaoDep;
+	public int getId() {
+		return id;
 	}
-	public void setIdentificacaoDep(String identificacaoDep) {
-		this.identificacaoDep = identificacaoDep;
+	public void setId(int id) {
+		this.id = id;
 	}
-    
+	
+	
     
 }

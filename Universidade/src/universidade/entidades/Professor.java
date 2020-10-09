@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package univercidade.entidades;
+package universidade.entidades;
+
+import java.io.Serializable;
 
 /**
  *
  * @author jean
  */
-public class Professor {
+public class Professor implements Serializable {
     private String nome;
     private double salario;
     private String identificacaoCPF;

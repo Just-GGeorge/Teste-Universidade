@@ -3,15 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package univercidade.entidades;
+package universidade.entidades;
+
+import java.io.Serializable;
 
 /**
  *
  * @author jean
  */
-public class Disciplina {
+public class Disciplina implements Serializable {
     private String nome;
-    private String identificacao;
+    private int identificacao;
     /*objetivo: metodo para verificar e validar pré-requisitos
     de uma disciplina 
     */
@@ -23,11 +25,11 @@ public class Disciplina {
         this.nome = nome;
     }
 
-    public String getIdentificacao() {
+    public int getIdentificacao() {
         return identificacao;
     }
 
-    public void setIdentificacao(String identificacao) {
+    public void setIdentificacao(int identificacao) {
         this.identificacao = identificacao;
     }
 }
